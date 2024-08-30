@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Aims - GPA-CGPA Calculator</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="brand-name-logo"><a href="https://pakaims.edu.pk/" target="_blank"><img class="brand-logo" src="IMS-Logo.png" alt="Pak-Aims-Logo"> Pak Aims</a></li>
+            <li class="navbar-text">GPA - CGPA Calculator</li>
+        </ul>
+    </nav>
+
+    <section class="calculator">
+        <div class="card">
+            <h1 class="heading">GPA Calculator</h1>
+
+            <p class="tip">Input Credit-Hour and Grade of each subject (Grade must be in CAPITAL).</p>
+            <section class="sub-headings">
+                <p class="sub-headings-paragraph course-title-heading">Course Title <span id="optional-text">(optional)</span></p>
+                <p class="sub-headings-paragraph ch-heading">Credit Hour</p>
+                <p class="sub-headings-paragraph grade-heading">Grade</p>
+            </section>
+
+            <form id="gpa-input-section" class="gpa-calculator-content">
+
+                <section id="gpaInputLines"></section>
+
+                <section class="btns">
+
+                    <section class="smallBtns">
+                        <button id="gpaAddCourseBtn" class="addBtn">&#10010 Add Course</button>
+                        <button id="gpaRemoveCourseBtn" class="removeBtn">&#8722  Remove Course</button>
+                        <input class="clearAllBtn" type="reset" value="&#10008 Clear All">
+                    </section>
+
+                    <button id="gpaCalBtn" class="calculate-btn">Calculate</button>
+
+                    <div id="gpaResult" class="result hidden"></div>
+                </section>
+            </form>
+        </div>
+        
+        <div class="card">
+            <h1 class="heading">CGPA Calculator</h1>
+
+            <p class="tip">Input Credit-Hour and Grade of every semester (1st semester to previous semester).</p>
+            
+            <section class="sub-headings">
+                <p class="sub-headings-paragraph course-title-heading cgpa-sem-heading">Semester</p>
+                <p class="sub-headings-paragraph ch-heading cgpa-ch-heading">Credit Hour</p>
+                <p class="sub-headings-paragraph grade-heading cgpa-gpa-heading">GPA</p>
+            </section>
+            
+            <form id="cgpa-input-section" class="gpa-calculator-content">
+                
+                <section id="cgpaInputLines"></section>
+                
+                <section class="btns">
+                    <section class="smallBtns">
+                        <button id="cgpaAddCourseBtn" class="addBtn">&#10010 Add Semester</button>
+                        <button id="cgpaRemoveCourseBtn" class="removeBtn">&#8722 Remove Semester</button>
+                        <input class="clearAllBtn" type="reset" value="&#10008 Clear All">
+                    </section>
+                    
+                    <button id="cgpaCalBtn" class="calculate-btn">Calculate</button>
+                    
+                    <div id="cgpaResult" class="result hidden"></div>
+                </section>
+            </form>
+        </div>
+    </section>
+
+    <section class="calculator">
+        
+    </section>
+
+
+    <section class="info-section">
+        <div class="info-section-content">
+            <h1 class="heading is-heading">Courses of BSCS</h1>
+            <div class="table">
+                <div class="table-heading">
+                    <p id="heading-text1">Course Title</p>
+                    <p id="heading-text2">Credit Hour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        Pak Aims Ⓒ 2024 - All Rights Are Reserved - Developed By Umer Iqbal
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

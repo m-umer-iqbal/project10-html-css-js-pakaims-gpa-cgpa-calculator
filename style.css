@@ -1,0 +1,382 @@
+:root {
+    --PakAimsBlue: #3E4095;
+    --basic: #f3f3f3;
+    --greenLight: #00FF7F;
+    --inputColor: #3e40951a;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic);
+}
+
+/********************************* navbar ************************/
+nav {
+    background-color: var(--PakAimsBlue);
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.brand-name-logo {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.brand-name-logo a{
+    text-decoration: none;
+    color: var(--basic);
+}
+.brand-logo {
+    width: 80px;
+    height: 32px;
+}
+
+.navbar-text {
+    font-size: 24px;
+    color: var(--basic);
+}
+
+/************************************* Cards body ********************/
+.calculator {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 10px;
+    color: var(--PakAimsBlue);
+}
+
+/************************************* GPA section *******************/
+.card {
+    width: 45%;
+    padding: 0px 15px 10px;
+}
+
+.card:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset, -12px -12px 12px white inset;
+}
+
+/*************************************** GPA Heading *****************/
+.heading {
+    font-weight: 700;
+    color: var(--PakAimsBlue);
+}
+
+/************************************ Sub Headings *********************/
+.sub-headings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.sub-headings-paragraph{
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.course-title-heading {
+    width: 50%;
+}
+#optional-text {
+    font-size: 14px;
+}
+
+.ch-heading, .grade-heading  {
+    width: 24%;
+}
+
+/************************************* Inputs ************************/
+.line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.courses-input {
+    width: 50%;
+    background-color: var(--inputColor);
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--PakAimsBlue);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    margin: 0;
+}
+
+.ch-input {
+    width: 23%;
+    background-color: var(--inputColor);
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--PakAimsBlue);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+
+.grade-input {
+    width: 23%;
+    background-color: var(--inputColor);
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--PakAimsBlue);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+
+/********************************* Buttons ************************/
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.smallBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addBtn,
+.removeBtn,
+.clearAllBtn {
+    border: none;
+    font-size: 16px;
+    color: var(--greenLight);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--greenLight);
+    background-color: transparent;
+}
+
+.removeBtn {
+    color: var(--PakAimsBlue);
+    text-decoration-color: var(--PakAimsBlue);
+}
+
+.clearAllBtn {
+    color: red;
+    text-decoration-color: red;
+}
+
+.addBtn:hover,
+.clearAllBtn:hover,
+.removeBtn:hover {
+    text-decoration: none;
+}
+
+.calculate-btn {
+    width: min(370px, 80%);
+    font-size: 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 5px;
+    background-color: var(--basic);
+    color: var(--PakAimsBlue);
+    border: 2px solid var(--PakAimsBlue);
+}
+
+.calculate-btn:hover {
+    background-color: var(--PakAimsBlue);
+    color: var(--basic);
+    border: 2px solid var(--PakAimsBlue);
+}
+
+.result {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--greenLight);
+    width: 96%;
+    border-radius: 8px;
+    color: var(--PakAimsBlue);
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+/********************************** CGPA Section **************/
+.tip{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: red;
+}
+.sem-text{
+    margin: 0;
+}
+.cgpa-sem-heading{
+    width: 50%;
+}
+.cgpa-ch-heading{
+    width: 25%;
+}
+.cgpa-gpa-heading{
+    width: 25%;
+}
+
+
+
+/******************************* Info-Section ***************/
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 10px;
+    color: var(--PakAimsBlue);
+}
+
+.info-section-content {
+    width: min(95%, 1400px);
+}
+
+.is-heading {
+    align-self: flex-start;
+}
+
+.table {
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+.table-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PakAimsBlue);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#heading-text1 {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--basic);
+    padding: 5px;
+    padding: 0 5px;
+}
+
+#heading-text2 {
+    width: 20%;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--basic);
+    text-align: center;
+    padding: 0 5px;
+}
+
+.table-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 80%;
+    font-size: 18px;
+    border-right: 1px solid var(--PakAimsBlue);
+    margin: 0;
+    padding: 20px 5px;
+    border-top: 1px solid var(--PakAimsBlue);
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.crh {
+    height: 20px;
+    border-top: 1px solid var(--PakAimsBlue);
+    border-left: 1px solid var(--PakAimsBlue);
+    width: 20%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/********************* footer ************/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-size: 18px;
+    background-color: var(--PakAimsBlue);
+    color: gainsboro;
+}
+
+@media only screen and (max-width: 540px) {
+    ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .brand-name-logo {
+        flex-direction: column;
+    }
+    .brand-name-logo a{
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-logo{
+        width: 132px;
+        height: 48px;
+    }
+    .footer{
+        padding: 20px;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .calculator{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card{
+        width: 75%;
+    }
+}
